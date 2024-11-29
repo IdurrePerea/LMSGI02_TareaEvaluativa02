@@ -1,0 +1,87 @@
+<!--
+  MÓDULO:LENGUAJE DE MARCAS
+  UD02 DESARROLLO WEB CON HTML5 Y CSS3 
+  AUTOR: Idurre Perea Sainz
+  FECHA: 25/11/24
+--> 
+<!-- Esta página muestra la página de contacto con formulario -->
+<!DOCTYPE html>
+  <html lang="es">
+
+    <head>
+      <title>CONTACTO</title>
+      <meta charset="utf-8">
+      <meta name="description" content="Página de presentación">
+      <meta name="keywords" content="R3NTR3LIC, RENTRELIC, presentación">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/estilos.css">
+    </head> 
+
+    <body>
+
+      <header>
+        <h1>R3ntr3lic</h1>
+        <h2>Tu opción inteligente para moverte de manera sostenible</h2>
+      </header>
+
+      <nav>
+        <section class="menu">
+          <a href="index.html">Inicio</a>
+          <a href="conocenos.html">Conócenos</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="noticias.html">Noticias</a>
+          <a href="planes.html">Planes</a>
+          <a href="contacto.html">Contacto</a>
+        </section>
+      </nav>
+      
+      <main>
+        <section class="formulario-container">
+          <h2>Formulario de Contacto</h2>
+          <form action="mailto:correo@correo.com" method="post">
+            <fieldset class="form-grupo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </fieldset>
+            <fieldset class="form-grupo">
+              <label for="apellidos">Apellidos</label>
+              <input type="text" id="apellidos" name="apellidos" required>
+            </fieldset>
+            <fieldset class="form-grupo">
+              <label for="municipio">Municipio</label>
+              <input type="text" id="municipio" name="municipio" required>
+            </fieldset>
+            <fieldset class="form-grupo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </fieldset>
+            <fieldset class="form-grupo">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </fieldset>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+          </form>
+        </section> 
+      </main>
+
+      <footer class="footer">
+        <h1>R3ntr3lic</h1>
+        <section class="redes-sociales">
+          <img src="./multimedia/logoIG.png" alt="No se puede mostrar la imagen">
+          <img src="./multimedia/logoFB.png" alt="No se puede mostrar la imagen">
+          <img src="./multimedia/logoX.png" alt="No se puede mostrar la imagen">
+          <img src="./multimedia/logoLI.png" alt="No se puede mostrar la imagen">
+        </section>
+        <section class="pie">
+          <article>Aviso Legal</article>
+          <article>Política de Privacidad</article>
+          <article>Cookies</article>
+          <article>Mapa Web</article>
+          <a href="contacto.html">Contacto</a>
+        </section>
+      </footer>
+      
+    </body>
+
+  </html>
